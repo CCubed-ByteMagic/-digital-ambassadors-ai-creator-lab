@@ -1,18 +1,23 @@
 # Digital Ambassadors — AI Creator Lab
 
-Responsive static website for the first tutorial. No build tools or framework are needed.
+## Tutorial 01: Why Your AI Prompt Didn't Work
 
-## Files
-- `index.html` — content and YouTube embeds
-- `styles.css` — responsive design
-- `README.md` — deployment notes
+This package contains the revised beginner-friendly website:
 
-## Publish using GitHub + Render
-1. Create a new GitHub repository named `digital-ambassadors-ai-creator-lab`.
-2. Upload these three files to the repository root.
-3. In Render, select **New → Static Site** and connect the repository.
-4. Set branch to `main` (or your default branch), leave **Build command** blank, and set **Publish directory** to `.`.
-5. Create the site. Render will provide a public `onrender.com` address.
-6. With auto-deploy enabled, future commits to the connected branch will redeploy the site.
+- `index.html` — the tutorial page, including the three YouTube videos and expanded guided explanations
+- `styles.css` — responsive styling for desktop and mobile
+- `README.md` — these notes
 
-The video files remain on YouTube; this site embeds them, so it does not need to store or serve the video files. Check that each video is Public or Unlisted and embedding is allowed.
+## What changed
+
+The page now guides learners through the experiment step by step, using simple, friendly English. It explains the original prompt, the first unsuccessful correction, the diagnosis suggested by Claude, and the improved description. It also includes pause-and-think questions and a small practice task.
+
+The existing video IDs, site branding, and general visual style have been retained.
+
+## Deploy on Render
+
+Use the same GitHub repository and Render Static Site service as before. Replace the existing `index.html` and `styles.css` with the files in this package, commit and push the changes, and Render should redeploy automatically.
+
+No build command is required. Publish directory: `.`
+
+If your Render service is already connected to GitHub, you do not need to create a new service.
